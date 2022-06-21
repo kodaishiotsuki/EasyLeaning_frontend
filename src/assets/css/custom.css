@@ -108,3 +108,18 @@
   color: #051b35 !important;
   font-size: 30px;
 }
+
+.navBackground {
+  transition: background-color 400ms linear;
+  background-color: rgb(0,0,0,0.1) !important;
+  -ms-transition: background-color 400ms linear;
+  -moz-transition: background-color 400ms linear;
+  -webkit-transition: background-color 400ms linear
+}
+.navBackgroundScroll {
+  transition: background-color 400ms linear;
+  background-color: #ffffff !important;
+  -ms-transition: background-color 400ms linear;
+  -moz-transition: background-color 400ms linear;
+  -webkit-transition: background-color 400ms linear;
+}
