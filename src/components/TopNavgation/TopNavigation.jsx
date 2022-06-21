@@ -2,22 +2,26 @@ import React, { useEffect, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import whiteLogo from "../../assets/Image/logo_white.png";
 import blackLogo from "../../assets/Image/logo_black.png";
+import "../../assets/css/custom.css";
 
 const TopNavigation = () => {
   const [navBarTitle, setNavBarTitle] = useState("navTitle");
   const [navBarLogo, setNavBarLogo] = useState(whiteLogo);
-  const [navBackGround, setNavBackGround] = useState("navBackground");
+  const [navBavBackGround, setNavBarBackGround] = useState("navBackground");
+  const [navBarItem, setNavBarItem] = useState("navItem");
 
-  //スクロール条件定義
+  //スクロール時の条件定義
   const toggleVisibility = () => {
     if (window.scrollY > 100) {
       setNavBarTitle("navTitleScroll");
       setNavBarLogo(blackLogo);
-      setNavBackGround("navBackgroundScroll");
+      setNavBarBackGround("navBackgroundScroll");
+      setNavBarItem("navItemScroll");
     } else if (window.scrollY < 100) {
       setNavBarTitle("navTitle");
       setNavBarLogo(whiteLogo);
-      setNavBackGround("navBackground");
+      setNavBarBackGround("navBackground");
+      setNavBarItem("navItem");
     }
   };
 
@@ -30,7 +34,7 @@ const TopNavigation = () => {
   return (
     <>
       <Navbar
-        className={navBackGround}
+        className={navBavBackGround}
         collapseOnSelect
         expand='lg'
         bg='dark'
@@ -44,12 +48,24 @@ const TopNavigation = () => {
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'></Nav>
           <Nav>
-            <Nav.Link href='#deets'>HOME</Nav.Link>
-            <Nav.Link href='#deets'>ABOUT</Nav.Link>
-            <Nav.Link href='#deets'>SERVICE</Nav.Link>
-            <Nav.Link href='#deets'>COURSES</Nav.Link>
-            <Nav.Link href='#deets'>PORTFOLIO</Nav.Link>
-            <Nav.Link href='#deets'>CONTACT</Nav.Link>
+            <Nav.Link className={navBarItem} href='#deets'>
+              HOME
+            </Nav.Link>
+            <Nav.Link className={navBarItem} href='#deets'>
+              ABOUT
+            </Nav.Link>
+            <Nav.Link className={navBarItem} href='#deets'>
+              SERVICE
+            </Nav.Link>
+            <Nav.Link className={navBarItem} href='#deets'>
+              COURSES
+            </Nav.Link>
+            <Nav.Link className={navBarItem} href='#deets'>
+              PORTFOLIO
+            </Nav.Link>
+            <Nav.Link className={navBarItem} href='#deets'>
+              CONTACT
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

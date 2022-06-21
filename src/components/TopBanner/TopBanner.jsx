@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import "../../assets/css/custom.css";
-// import "../../assets/css/bootstrap.min.css";
+
 
 const TopBanner = () => {
   return (
