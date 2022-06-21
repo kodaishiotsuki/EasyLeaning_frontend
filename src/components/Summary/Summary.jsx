@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Button } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Summary = () => {
   return (
@@ -7,7 +7,7 @@ const Summary = () => {
       <Container className='summaryBanner p-0' fluid={true}>
         <div className='summaryBannerOverlay'>
           <Container className='text-center'>
-            <Row className="countSection">
+            <Row className='countSection'>
               <Col lg={8} md={6} sm={12}>
                 <Row>
                   <Col>
