@@ -172,7 +172,7 @@
 }
 
 .countSection{
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .cardTitle {
@@ -190,7 +190,17 @@
 }
 
 .workCard{
-  margin-top: -20%;
+  /* margin-top: 25%; */
   padding: 10px 10px 10px 10px;
   border-radius: 3px;
+}
+
+.iconImage{
+  color: #051b35;
+  font-size: 16px;
+}
+
+.iconProject{
+  color: #ffffff;
+  font-size: 40px;
 }
