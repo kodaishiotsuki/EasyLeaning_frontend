@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 const Summary = () => {
   return (
@@ -28,7 +28,27 @@ const Summary = () => {
                 </Row>
               </Col>
               <Col lg={4} md={6} sm={12}>
-                <h1>Four</h1>
+                <Card className='workCard'>
+                  <Card.Body>
+                    <Card.Title className='cardTitle'>
+                      What I Have Achieved
+                    </Card.Title>
+                    <Card.Text>
+                      <p className='cardSubTitle text-justify'>
+                        Requirement Gathering
+                      </p>
+                      <p className='cardSubTitle text-justify'>
+                        System Analysis
+                      </p>
+                      <p className='cardSubTitle text-justify'>
+                        Coding Testing
+                      </p>
+                      <p className='cardSubTitle text-justify'>
+                        Implementation
+                      </p>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </Container>
