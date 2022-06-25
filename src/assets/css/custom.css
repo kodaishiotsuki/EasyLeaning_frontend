@@ -243,3 +243,50 @@
 .videoText{
   margin-top: 2%;
 }
+
+.sliderBack{
+  background-color: #051b35;
+  min-height: 400px;
+}
+
+.reviewMainTitle {
+  color: #ffffff;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.reviewButton {
+  background: #ffffff none repeat scroll 0 0;
+  height: 3px;
+  width: 100px;
+  margin: -1.9rem auto 0;
+  margin-bottom: 3rem;
+}
+
+.circleImg{
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: #051b35;
+}
+
+.reviewName {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.reviewDescription {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
