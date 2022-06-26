@@ -1,4 +1,5 @@
 import React from "react";
+import AllServicePage from "./pages/AllServicePage";
 import ContactPage from "./pages/ContactPage";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
       {/* <AboutPage /> */}
       {/* <AllCoursePage /> */}
       {/* <PortfolioPage /> */}
-      <ContactPage />
+      {/* <ContactPage /> */}
+      <AllServicePage />
     </>
   );
 }
