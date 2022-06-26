@@ -7,7 +7,6 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
-
 const Footer = () => {
   return (
     <>
@@ -40,11 +39,45 @@ const Footer = () => {
           </Col>
           <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
             <h2 className='footerName text-center'>Information</h2>
+            <div className='text-center'>
+              <a href='#' className='footerLink'>
+                About Me
+              </a>{" "}
+              <br />
+              <a href='#' className='footerLink'>
+                Company Profile
+              </a>{" "}
+              <br />
+              <a href='#' className='footerLink'>
+                Contact Us
+              </a>{" "}
+              <br />
+            </div>
           </Col>
           <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
             <h2 className='footerName text-center'>Policy</h2>
+            <div className='text-center'>
+              <a href='#' className='footerLink'>
+                Refund Policy
+              </a>{" "}
+              <br />
+              <a href='#' className='footerLink'>
+                Trems And Condition
+              </a>{" "}
+              <br />
+              <a href='#' className='footerLink'>
+                Privacy Policy
+              </a>{" "}
+              <br />
+            </div>
           </Col>
         </Row>
+      </Container>
+
+      <Container fluid={true} className='text-center copyrightSection'>
+        <a className='copyrightLink' href='#'>
+          © 2020 easy Learning Inc.
+        </a>
       </Container>
     </>
   );
