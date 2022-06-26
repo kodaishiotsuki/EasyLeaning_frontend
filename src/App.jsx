@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioPage from "./pages/PortfolioPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -7,7 +7,8 @@ function App() {
       {/* <HomePage /> */}
       {/* <AboutPage /> */}
       {/* <AllCoursePage /> */}
-      <PortfolioPage />
+      {/* <PortfolioPage /> */}
+      <ContactPage />
     </>
   );
 }
