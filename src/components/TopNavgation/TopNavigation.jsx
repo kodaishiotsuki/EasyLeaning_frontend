@@ -3,6 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import whiteLogo from "../../assets/Image/logo_white.png";
 import blackLogo from "../../assets/Image/logo_black.png";
 import "../../assets/css/custom.css";
+import { NavLink } from "react-router-dom";
 
 const TopNavigation = () => {
   const [navBarTitle, setNavBarTitle] = useState("navTitle");
@@ -44,31 +45,50 @@ const TopNavigation = () => {
         variant={navVariant}
         fixed='top'
       >
-        <Navbar.Brand className={navBarTitle} href='#home'>
+        <Navbar.Brand className={navBarTitle} to='/'>
           <img src={navBarLogo} alt='' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'></Nav>
           <Nav>
-            <Nav.Link className={navBarItem} href='#deets'>
-              HOME
+
+            <Nav.Link>
+              <NavLink className={navBarItem} to='/'>
+                HOME
+              </NavLink>
             </Nav.Link>
-            <Nav.Link className={navBarItem} href='#deets'>
-              ABOUT
+
+            <Nav.Link>
+              <NavLink className={navBarItem} to='/about'>
+                ABOUT
+              </NavLink>
             </Nav.Link>
-            <Nav.Link className={navBarItem} href='#deets'>
-              SERVICE
+
+            <Nav.Link>
+              <NavLink className={navBarItem} to='/service'>
+                SERVICE
+              </NavLink>
             </Nav.Link>
-            <Nav.Link className={navBarItem} href='#deets'>
-              COURSES
+
+            <Nav.Link>
+              <NavLink className={navBarItem} to='/course'>
+                COURSES
+              </NavLink>
             </Nav.Link>
-            <Nav.Link className={navBarItem} href='#deets'>
-              PORTFOLIO
+
+            <Nav.Link>
+              <NavLink className={navBarItem} to='/portfolio'>
+                PORTFOLIO
+              </NavLink>
             </Nav.Link>
-            <Nav.Link className={navBarItem} href='#deets'>
-              CONTACT
+
+            <Nav.Link>
+              <NavLink className={navBarItem} to='/contact'>
+                CONTACT
+              </NavLink>
             </Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Navbar>

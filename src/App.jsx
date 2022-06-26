@@ -1,16 +1,13 @@
 import React from "react";
-import AllServicePage from "./pages/AllServicePage";
-import ContactPage from "./pages/ContactPage";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./routers/AppRouter";
 
 function App() {
   return (
     <>
-      {/* <HomePage /> */}
-      {/* <AboutPage /> */}
-      {/* <AllCoursePage /> */}
-      {/* <PortfolioPage /> */}
-      {/* <ContactPage /> */}
-      <AllServicePage />
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </>
   );
 }
