@@ -6,6 +6,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,15 +17,15 @@ const Footer = () => {
             <h2 className='footerName text-center'>Follow Us</h2>
 
             <div className='socialContainer'>
-              <a href='#' className='facebook social'>
+              <Link to='#' className='facebook social'>
                 <FontAwesomeIcon icon={faFacebook} size='2x' />
-              </a>
-              <a href='#' className='youtube social'>
+              </Link>
+              <Link to='#' className='youtube social'>
                 <FontAwesomeIcon icon={faYoutube} size='2x' />
-              </a>
-              <a href='#' className='twitter social'>
+              </Link>
+              <Link to='#' className='twitter social'>
                 <FontAwesomeIcon icon={faTwitter} size='2x' />
-              </a>
+              </Link>
             </div>
           </Col>
           <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
@@ -40,45 +41,44 @@ const Footer = () => {
           <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
             <h2 className='footerName text-center'>Information</h2>
             <div className='text-center'>
-              <a href='#' className='footerLink'>
+              <Link to='#' className='footerLink'>
                 About Me
-              </a>{" "}
+              </Link>
               <br />
-              <a href='#' className='footerLink'>
+              <Link to='#' className='footerLink'>
                 Company Profile
-              </a>{" "}
+              </Link>
               <br />
-              <a href='#' className='footerLink'>
+              <Link to='#' className='footerLink'>
                 Contact Us
-              </a>{" "}
+              </Link>
               <br />
             </div>
           </Col>
           <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
             <h2 className='footerName text-center'>Policy</h2>
-            <div className="text-center">
-
-            <a href='#' className='footerLink'>
-              Refund Policy
-            </a>{" "}
-            <br />
-            <a href='#' className='footerLink'>
-              Trems And Condition
-            </a>{" "}
-            <br />
-            <a href='#' className='footerLink'>
-              Privacy Policy
-            </a>{" "}
-            <br />
+            <div className='text-center'>
+              <Link to='/refund' className='footerLink'>
+                Refund Policy
+              </Link>{" "}
+              <br />
+              <Link to='#' className='footerLink'>
+                Trems And Condition
+              </Link>
+              <br />
+              <Link to='#' className='footerLink'>
+                Privacy Policy
+              </Link>
+              <br />
             </div>
           </Col>
         </Row>
       </Container>
 
       <Container fluid={true} className='text-center copyrightSection'>
-        <a className='copyrightLink' href='#'>
+        <Link className='copyrightLink' to='#'>
           © 2020 easy Learning Inc.
-        </a>
+        </Link>
       </Container>
     </>
   );
