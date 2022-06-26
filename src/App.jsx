@@ -1,10 +1,14 @@
 import React from "react";
+import PageTop from "./components/PageTop/PageTop";
+import TopNavigation from "./components/TopNavgation/TopNavigation";
 import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
-      <HomePage />
+      <TopNavigation/>
+      <PageTop pageTitle="About Me"/>
+      {/* <HomePage /> */}
     </>
   );
 }
