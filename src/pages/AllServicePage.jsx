@@ -8,7 +8,7 @@ import TopNavigation from "../components/TopNavgation/TopNavigation";
 const AllServicePage = () => {
   return (
     <>
-      <TopNavigation />
+      <TopNavigation title='Our Services' />
       <PageTop pageTitle='Our Services' />
       <Services />
       <ContactSection />

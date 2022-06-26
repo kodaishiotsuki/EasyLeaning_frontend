@@ -5,12 +5,13 @@ import blackLogo from "../../assets/Image/logo_black.png";
 import "../../assets/css/custom.css";
 import { NavLink } from "react-router-dom";
 
-const TopNavigation = () => {
+const TopNavigation = ({ title }) => {
   const [navBarTitle, setNavBarTitle] = useState("navTitle");
   const [navBarLogo, setNavBarLogo] = useState(whiteLogo);
   const [navBavBackGround, setNavBarBackGround] = useState("navBackground");
   const [navBarItem, setNavBarItem] = useState("navItem");
   const [navVariant, setNavVariant] = useState("dark");
+  const [pageTitle, setPageTitle] = useState(title);
 
   //スクロール時の条件定義
   const toggleVisibility = () => {
@@ -37,6 +38,7 @@ const TopNavigation = () => {
 
   return (
     <>
+      <title>{pageTitle}</title>
       <Navbar
         className={navBavBackGround}
         collapseOnSelect
@@ -52,43 +54,83 @@ const TopNavigation = () => {
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'></Nav>
           <Nav>
-
             <Nav.Link>
-              <NavLink className={navBarItem} to='/'>
+              <NavLink
+                exact='true'
+                style={({ isActive }) => ({
+                  color: isActive ? "#ffd900" : "#ffffff",
+                })}
+                className={navBarItem}
+                to='/'
+              >
                 HOME
               </NavLink>
             </Nav.Link>
 
             <Nav.Link>
-              <NavLink className={navBarItem} to='/about'>
+              <NavLink
+                exact='true'
+                style={({ isActive }) => ({
+                  color: isActive ? "#ffd900" : "#ffffff",
+                })}
+                className={navBarItem}
+                to='/about'
+              >
                 ABOUT
               </NavLink>
             </Nav.Link>
 
             <Nav.Link>
-              <NavLink className={navBarItem} to='/service'>
+              <NavLink
+                exact='true'
+                style={({ isActive }) => ({
+                  color: isActive ? "#ffd900" : "#ffffff",
+                })}
+                className={navBarItem}
+                to='/service'
+              >
                 SERVICE
               </NavLink>
             </Nav.Link>
 
             <Nav.Link>
-              <NavLink className={navBarItem} to='/course'>
+              <NavLink
+                exact='true'
+                style={({ isActive }) => ({
+                  color: isActive ? "#ffd900" : "#ffffff",
+                })}
+                className={navBarItem}
+                to='/course'
+              >
                 COURSES
               </NavLink>
             </Nav.Link>
 
             <Nav.Link>
-              <NavLink className={navBarItem} to='/portfolio'>
+              <NavLink
+                exact='true'
+                style={({ isActive }) => ({
+                  color: isActive ? "#ffd900" : "#ffffff",
+                })}
+                className={navBarItem}
+                to='/portfolio'
+              >
                 PORTFOLIO
               </NavLink>
             </Nav.Link>
 
             <Nav.Link>
-              <NavLink className={navBarItem} to='/contact'>
+              <NavLink
+                exact='true'
+                style={({ isActive }) => ({
+                  color: isActive ? "#ffd900" : "#ffffff",
+                })}
+                className={navBarItem}
+                to='/contact'
+              >
                 CONTACT
               </NavLink>
             </Nav.Link>
-
           </Nav>
         </Navbar.Collapse>
       </Navbar>

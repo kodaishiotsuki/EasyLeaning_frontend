@@ -7,7 +7,7 @@ import TopNavigation from "../components/TopNavgation/TopNavigation";
 const ContactPage = () => {
   return (
     <>
-      <TopNavigation />
+      <TopNavigation title='Contact Us' />
       <PageTop pageTitle='Contact Us' />
       <ContactSection />
       <Footer />

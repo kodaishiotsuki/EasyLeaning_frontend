@@ -8,7 +8,7 @@ import AboutMe from "../components/AboutMe/AboutMe";
 const AboutPage = () => {
   return (
     <>
-      <TopNavigation />
+      <TopNavigation title="About us"/>
       <PageTop pageTitle='About Us' />
       <AboutMe />
       <AboutDescription />

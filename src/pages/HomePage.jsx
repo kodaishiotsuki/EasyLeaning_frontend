@@ -14,7 +14,7 @@ import Video from "../components/Video/Video";
 const HomePage = () => {
   return (
     <>
-      <TopNavigation />
+      <TopNavigation title='easy Leaning Page' />
       <TopBanner />
       <Services />
       <Analysis />

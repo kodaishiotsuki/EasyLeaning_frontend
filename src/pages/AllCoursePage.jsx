@@ -7,7 +7,7 @@ import Footer from "../components/Footer/Footer";
 const AllCoursePage = () => {
   return (
     <>
-      <TopNavigation />
+      <TopNavigation title="All Course"/>
       <PageTop pageTitle='All Courses' />
       <AllCorses />
       <Footer />
