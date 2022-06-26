@@ -9,6 +9,7 @@ const TopNavigation = () => {
   const [navBarLogo, setNavBarLogo] = useState(whiteLogo);
   const [navBavBackGround, setNavBarBackGround] = useState("navBackground");
   const [navBarItem, setNavBarItem] = useState("navItem");
+  const [navVariant, setNavVariant] = useState("dark");
 
   //スクロール時の条件定義
   const toggleVisibility = () => {
@@ -17,11 +18,13 @@ const TopNavigation = () => {
       setNavBarLogo(blackLogo);
       setNavBarBackGround("navBackgroundScroll");
       setNavBarItem("navItemScroll");
+      setNavVariant("light");
     } else if (window.scrollY < 100) {
       setNavBarTitle("navTitle");
       setNavBarLogo(whiteLogo);
       setNavBarBackGround("navBackground");
       setNavBarItem("navItem");
+      setNavVariant("dark");
     }
   };
 
@@ -38,7 +41,7 @@ const TopNavigation = () => {
         collapseOnSelect
         expand='lg'
         bg='dark'
-        variant='dark'
+        variant={navVariant}
         fixed='top'
       >
         <Navbar.Brand className={navBarTitle} href='#home'>

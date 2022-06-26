@@ -56,19 +56,20 @@ const Footer = () => {
           </Col>
           <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
             <h2 className='footerName text-center'>Policy</h2>
-            <div className='text-center'>
-              <a href='#' className='footerLink'>
-                Refund Policy
-              </a>{" "}
-              <br />
-              <a href='#' className='footerLink'>
-                Trems And Condition
-              </a>{" "}
-              <br />
-              <a href='#' className='footerLink'>
-                Privacy Policy
-              </a>{" "}
-              <br />
+            <div className="text-center">
+
+            <a href='#' className='footerLink'>
+              Refund Policy
+            </a>{" "}
+            <br />
+            <a href='#' className='footerLink'>
+              Trems And Condition
+            </a>{" "}
+            <br />
+            <a href='#' className='footerLink'>
+              Privacy Policy
+            </a>{" "}
+            <br />
             </div>
           </Col>
         </Row>
