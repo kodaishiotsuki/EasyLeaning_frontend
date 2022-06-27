@@ -41,15 +41,15 @@ const Footer = () => {
           <Col lg={3} md={6} sm={12} className='p-5 text-justify'>
             <h2 className='footerName text-center'>Information</h2>
             <div className='text-center'>
-              <Link to='#' className='footerLink'>
+              <Link to='/about' className='footerLink'>
                 About Me
               </Link>
               <br />
-              <Link to='#' className='footerLink'>
+              <Link to='/about' className='footerLink'>
                 Company Profile
               </Link>
               <br />
-              <Link to='#' className='footerLink'>
+              <Link to='/contact' className='footerLink'>
                 Contact Us
               </Link>
               <br />
@@ -66,7 +66,7 @@ const Footer = () => {
                 Trems And Condition
               </Link>
               <br />
-              <Link to='#' className='footerLink'>
+              <Link to='/privacy' className='footerLink'>
                 Privacy Policy
               </Link>
               <br />
