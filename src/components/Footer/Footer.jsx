@@ -62,7 +62,7 @@ const Footer = () => {
                 Refund Policy
               </Link>{" "}
               <br />
-              <Link to='#' className='footerLink'>
+              <Link to='/trems' className='footerLink'>
                 Trems And Condition
               </Link>
               <br />
