@@ -9,6 +9,7 @@ import ContactPage from "../pages/ContactPage";
 import RefundPage from "../pages/RefundPage";
 import TremsPage from "../pages/TremsPage";
 import PrivacyPage from "../pages/PrivacyPage";
+import ProjectDetailPage from "../pages/ProjectDetailPage";
 
 const AppRouter = () => {
   return (
@@ -23,7 +24,7 @@ const AppRouter = () => {
         <Route exact path='/refund' element={<RefundPage />} />
         <Route exact path='/trems' element={<TremsPage />} />
         <Route exact path='/privacy' element={<PrivacyPage />} />
-
+        <Route exact path='/projectdetails' element={<ProjectDetailPage />} />
       </Routes>
     </>
   );

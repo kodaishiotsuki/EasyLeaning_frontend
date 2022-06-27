@@ -510,3 +510,12 @@ a.twitter {
     color: #051b35;
     font-size: 16px;
 }
+
+.linkStyle{
+  color: #ffffff ;
+  text-decoration: none;
+}
+.linkStyle:hover{
+  color: #ffffff ;
+  text-decoration: none;
+}
