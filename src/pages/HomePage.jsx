@@ -10,12 +10,14 @@ import Services from "../components/Services/Services";
 import Summary from "../components/Summary/Summary";
 import TopBanner from "../components/TopBanner/TopBanner";
 import Video from "../components/Video/Video";
+import Welcome from "../components/Welcome/Welcome";
 
 const HomePage = () => {
   return (
     <>
       <TopNavigation title='easy Leaning Page' />
       <TopBanner />
+      <Welcome />
       <Services />
       <Analysis />
       <Summary />
