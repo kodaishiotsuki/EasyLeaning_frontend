@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TopNavigation from "../components/TopNavgation/TopNavigation";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Analysis from "../components/Analysis/Analysis";
@@ -13,6 +13,9 @@ import Video from "../components/Video/Video";
 import Welcome from "../components/Welcome/Welcome";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <>
       <TopNavigation title='easy Leaning Page' />
