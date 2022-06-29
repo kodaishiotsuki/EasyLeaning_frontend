@@ -47,8 +47,10 @@ const TopNavigation = ({ title }) => {
         variant={navVariant}
         fixed='top'
       >
-        <Navbar.Brand className={navBarTitle} to='/'>
-          <img src={navBarLogo} alt='' />
+        <Navbar.Brand className={navBarTitle}>
+          <NavLink to='/'>
+            <img src={navBarLogo} alt='' />
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>

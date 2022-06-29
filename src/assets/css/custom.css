@@ -123,6 +123,7 @@
   -ms-transition: background-color 400ms linear;
   -moz-transition: background-color 400ms linear;
   -webkit-transition: background-color 400ms linear;
+  box-shadow: 0 0 8px 0 rgba(0,115,230,0.3);
 }
 
 .navItem{
