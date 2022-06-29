@@ -519,3 +519,38 @@ a.twitter {
   color: #ffffff ;
   text-decoration: none;
 }
+
+.about-thumb-wrap.after-shape {
+  margin-right: 30px;
+}
+.about-thumb-wrap.after-shape:after {
+  content: "";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    height: 80%;
+    width: 154px;
+    border-radius: 10px;
+    background: #ffd900;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.projectDetailsText{
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #051b35;
+    font-size: 40px;
+}
+
+.project-details{
+  margin-left: 35px;
+}
+
+.detailsName{
+  color: #051b35;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
