@@ -10,6 +10,7 @@ import RefundPage from "../pages/RefundPage";
 import TremsPage from "../pages/TremsPage";
 import PrivacyPage from "../pages/PrivacyPage";
 import ProjectDetailPage from "../pages/ProjectDetailPage";
+import CourseDetailsPage from "../pages/CourseDetailsPage";
 
 const AppRouter = () => {
   return (
@@ -25,6 +26,8 @@ const AppRouter = () => {
         <Route exact path='/trems' element={<TremsPage />} />
         <Route exact path='/privacy' element={<PrivacyPage />} />
         <Route exact path='/projectdetails' element={<ProjectDetailPage />} />
+        <Route exact path='/coursesdetails' element={<CourseDetailsPage />} />
+
       </Routes>
     </>
   );

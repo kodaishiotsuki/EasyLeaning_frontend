@@ -24,7 +24,10 @@ const AllCorses = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Link className='courseViewMore float-left' to='#'>
+                <Link
+                  className='courseViewMore float-left'
+                  to='/coursesdetails'
+                >
                   View Details
                 </Link>
               </Col>
@@ -41,7 +44,10 @@ const AllCorses = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Link className='courseViewMore float-left' to='#'>
+                <Link
+                  className='courseViewMore float-left'
+                  to='/coursesdetails'
+                >
                   View Details
                 </Link>
               </Col>
@@ -58,7 +64,10 @@ const AllCorses = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Link className='courseViewMore float-left' to='#'>
+                <Link
+                  className='courseViewMore float-left'
+                  to='/coursesdetails'
+                >
                   View Details
                 </Link>
               </Col>
@@ -80,7 +89,10 @@ const AllCorses = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Link className='courseViewMore float-left' to='#'>
+                <Link
+                  className='courseViewMore float-left'
+                  to='/coursesdetails'
+                >
                   View Details
                 </Link>
               </Col>
@@ -97,7 +109,10 @@ const AllCorses = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Link className='courseViewMore float-left' to='#'>
+                <Link
+                  className='courseViewMore float-left'
+                  to='/coursesdetails'
+                >
                   View Details
                 </Link>
               </Col>
@@ -114,7 +129,10 @@ const AllCorses = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <Link className='courseViewMore float-left' to='#'>
+                <Link
+                  className='courseViewMore float-left'
+                  to='/coursesdetails'
+                >
                   View Details
                 </Link>
               </Col>
